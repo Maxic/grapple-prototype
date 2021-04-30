@@ -11,7 +11,7 @@ signal coin_increment
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var control_node = get_node("/root/main/Control")
+	var control_node = get_node("/root/main/Interact")
 	control_node.connect("coin_increment", self, "handle_coin_increment")
 
 
